@@ -1,0 +1,11 @@
+version: "3"
+services:
+  hello-play:
+    build: .
+    volumes:
+      - ./hello-play:/root/hello-play
+    command: sbt -mem 3072 run
+    tty: true
+    stdin_open: true
+    ports:
+      - 9000:9000
