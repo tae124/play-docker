@@ -12,6 +12,4 @@ RUN bash -c ' \
     sdk use scala 2.12.4'
 ENV JAVA_HOME /root/.sdkman/candidates/java/current
 ENV PATH $PATH:$JAVA_HOME/bin:/root/.sdkman/candidates/sbt/current/bin:/root/.sdkman/candidates/scala/current/bin
-WORKDIR /root/hello-play
-ADD hello-play /root/hello-play
 EXPOSE 9000

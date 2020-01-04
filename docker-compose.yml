@@ -4,6 +4,8 @@ services:
     build: .
     volumes:
       - ./hello-play:/root/hello-play
+      - ./hello-play-ivy-cache:/root/.ivy2
+    working_dir: /root/hello-play
     command: sbt -mem 3072 run
     tty: true
     stdin_open: true
